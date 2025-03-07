@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Estrutura Básica de Site</title>
     <style>
         * {
@@ -109,9 +110,9 @@
 
 <!-- Navbar -->
 <nav>
-    <div class="logo">Minha Logo</div>
+    <div onclick="corlink()" class=" logo">Minha Logo</div>
     <ul>
-        <li><a href="#">Link 1</a></li>
+        <li><a id="link" href="#">Link 1</a></li>
         <li><a href="#">Link 2</a></li>
         <li><a href="#">Link 3</a></li>
         <li><a href="#">Link 4</a></li>
@@ -122,9 +123,15 @@
 <!-- Container com metade texto e metade imagem -->
 <div class="content">
     <div class="text">
-        <h1>Bem-vindo ao Nosso Site</h1>
+        <h1 id="titulo" onmouseover="testeColor()  " onmouseup="reset()" >Bem-vindo ao Nosso Site</h1>
         <p>Este é um exemplo básico de como estruturar um site utilizando HTML. Aqui você pode ver a divisão entre texto
             e imagem, bem como a apresentação de cards logo abaixo.</p>
+        <form>
+            <label>
+                label
+                <input id="input" onmouseover="testeInput()" >
+            </label>
+        </form>
     </div>
     <div class="image">
         <img src="imagem.jpg" alt="Exemplo de imagem">
@@ -135,7 +142,7 @@
 <div class="cards">
     <div class="card">
         <img src="imagem.jpg" alt="Imagem do Card 1">
-        <h3>Título do Card 1</h3>
+        <h3 >Título do Card 1</h3>
         <p>Esta é uma breve descrição do card 1.</p>
     </div>
     <div class="card">
@@ -154,6 +161,6 @@
 <footer>
     <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
 </footer>
-
+<script src="exemplo.js"></script>
 </body>
 </html>

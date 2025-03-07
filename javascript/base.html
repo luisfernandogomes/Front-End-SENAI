@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous">
+    <title>Document</title>
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+</style>
+<body>
+<nav class="d-flex justify-content-between align-items-center p-4 bg-dark text-white header ">
+    <div class="text-white">Minha Logo</div>
+
+    <ul class="list-unstyled ms-2 d-flex">
+        <li class="ms-5"><a class="text-decoration-none text-white " href="sobre.html">Sobre</a></li>
+        <li class="ms-5"><a class="text-decoration-none text-white " href="exercicio.html">Exercicios</a></li>
+        <li class="ms-5"><a class="text-decoration-none text-white " href="#">link 3</a></li>
+        <li class="ms-5"><a class="text-decoration-none text-white " href="#">link 4</a></li>
+        <li class="ms-5"><a class="text-decoration-none text-white " href="#">link 5</a></li>
+
+    </ul>
+</nav>
+
+
+    <form class="p-5 bg-secondary text-white" >
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label onclick="popularinput('inputEmail4', 'email')" id="labelsete" for="inputEmail4">Email</label>
+                <input onblur="colorBlack()" onclick="corLabelUm()" type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6">
+                <label onclick="popularinput('inputPassword4', 'Senha')" id="labelseis" for="inputPassword4">Senha</label>
+                <input onblur="colorBlackum()" onclick="corLabelDois()" type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+            </div>
+        </div>
+        <div class="form-group">
+            <label onclick="popularinput('inputAddress', 'Endereço')" id="labelcinco" for="inputAddress">Endereço</label>
+            <input onblur="colorBlackdois()" onclick="corLabelTres()" type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+        </div>
+        <div class="form-group">
+            <label onclick="popularinput('inputAddress2', 'Endereço 2')" id="labelquatro" for="inputAddress2">Endereço 2</label>
+            <input onblur="colorBlacktres()" onclick="corLabelQuatro()" type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label onclick="popularinput('inputCity', 'Cidade')" id="labeltres" for="inputCity">Cidade</label>
+                <input onblur="colorBlackquatro()" onclick="corLabelCinco()" type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+                <label id="labeldois" for="inputEstado">Estado</label>
+                <select id="inputEstado" class="form-control">
+                    <option selected>Escolher...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label onclick="popularinput('inputCEP', 'CEP')" id="labelum" for="inputCEP">CEP</label>
+                <input onblur="colorBlackcinco()" onclick="corLabelSete()" type="text" class="form-control" id="inputCEP">
+            </div>
+        </div>
+        <div id="limpar" onclick="limparInputs()" class="btn btn-danger" >limpar</div>
+        <button type="submit" class="btn btn-primary">Entrar</button>
+    </form>
+
+
+<footer class="bg-dark text-white text-center container-fluid p-5  ">
+    <a class="" href="https://web.whatsapp.com/"><i class=" meuIcone bi bi-whatsapp mx-3 "></i></a>
+    <a class="" href="https://www.instagram.com/"><i class=" meuIcone bi bi-instagram mx-3 "></i></a>
+    <a class="" href="https://pt-br.facebook.com/"><i class=" meuIcone bi bi-facebook mx-3 "></i></a>
+    <a class="" href="https://www.apple.com/br/store?afid=p238%7Cum6L2XsO-dc_mtid_1870765e38482_pcrid_
+    78065540365519_pgrid_1249046529416390_pntwk_o_pchan__pexid__ptid_kwd-78065768093973%3Aloc-20_&cid=
+    aos-br-kwbi---slid---product-"><i class=" meuIcone bi bi-apple m-3"></i></a>
+    <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+<script src="js.js"></script>
+</body>
+</html>
